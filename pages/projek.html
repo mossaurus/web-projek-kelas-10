@@ -13,9 +13,90 @@
     <link rel="stylesheet " href="../css/style 1.css" />
 </head>
 <style>
-    .card {
+    header {
+    background-color: #A9A9A9;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    height: 30%; /* Add this line */
+}
+    /* Set the width of the sidebar to 250px (desktop) */
+.sidebar {
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* Set the width of the content to 100% (desktop) */
+.content {
+  width: 100vh;
+  margin-left: 250px;
+  padding: 20px;
+}
+
+/* On mobile, set the width of the sidebar to 100% and position it to the right */
+@media screen and (max-width: 767px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+    float: left;
+    overflow: visible;
+  }
+  .content {
+    width: 100vh;
+    margin: 0;
+  }
+}
+
+/* Add some top padding to the content to prevent it from being covered by the sidebar */
+.content {
+  padding-top: 3.5rem;
+}
+
+/* Style the navbar links */
+.nav-link {
+  display: block;
+  padding: 0.5rem 1rem;
+}
+
+/* Add some hover styling to the navbar links */
+.nav-link:hover {
+  background-color: #f9f9f9;
+}
+
+/* Style the active navbar link */
+.nav-link.active {
+  background-color: #e9ecef;
+}
+nav {
+  height: 30%;
+}
+
+footer {
+    background-color: #A9A9A9;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    height: 30%; /* Add this line */
+}
+.card {
         height: 100%;
-        width: 100%;
+        padding-top: 10px;
+    }
+
+    .card-body {
+        flex: 1 1 auto;
+    }
+
+    .card-img-top {
+        height: 12vw;
+        object-fit: cover;
     }
 </style>
 
@@ -33,11 +114,11 @@
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse justify-content-center" id=" navbar-nav">
+            <div class="collapse navbar-collapse justify-content-center id=" navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="../pages/projek.html"
-                            style="padding-right: 20px;"><strong>Home <span class="sr-only">(current)</span></strong></a>
+                            style="padding-right: 20px;"><strong>Home</strong></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="../pages/gallery.html"
@@ -45,7 +126,8 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="../pages/content.html"
-                            style="padding-right: 20px;"><strong>Projek 1</a>
+                            style="padding-right: 20px;"><strong>Projek 1<span
+                                    class="sr-only">(current)</span></strong></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="../pages/content 1.html"
@@ -53,18 +135,31 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="../pages/content 2.html"
-                            style="padding-right: 20px;"><strong>Projek 3</strong><span
-                                class="sr-only">(current)</span></strong></a>
+                            style="padding-right: 20px;"><strong>Projek 3</strong></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="../pages/Samen.html"
                             style="padding-right: 20px;"><strong>Samen</strong></a>
                     </li>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          my project
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../pages/content.html">projek 1</a></li>
+                          <li><a class="dropdown-item" href="../pages/content 1.html">projek 2</a></li>
+                          <li><a class="dropdown-item" href="../pages/content 2.html">projek 3</a></li>
+                          <li><a class="dropdown-item" href="../pages/Samen.html">Samen</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="../pages/gallery.html">gallery</a></li>
+                          <li><a class="dropdown-item" href="../Index.html">home</a></li>
+                        </ul>
+                      </div>
+                    
                 </ul>
             </div>
             </div>
         </nav>
-
         <!--JUMBOTRON -->
         <div class="jumbotron jumbotron-fluid ">
             <img src="../assets/bg home.jpg " alt=" " class="img-fluid " style="width:100% ">
@@ -79,10 +174,10 @@
         <div class="bg">
             <div class="container">
                 <div class="row d-flex">
-                    <div class="col-md-3">
+                    <div class="col-md-4 mb-3">
                         <!-- card 1 -->
-                        <div class="card" style="width: 18rem; width: 100%">
-                            <img src="../assets/projek 1-2.jpg " class="card-img-top" alt="..." style="height: 40%;">
+                        <div class="card" style="width: 18rem; width: 100% ">
+                            <img src="../assets/projek 1-2.jpg " class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title" style="font-weight: bold;"><strong>Projek 1</strong>
                                 </h5>
@@ -91,10 +186,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    
+                    <div class="col-md-4 mb-3">
                         <!-- card 2 -->
                         <div class="card" style="width: 18rem; width: 100%;">
-                            <img src="../assets/Foto dari Fahri Salman (1).jpg" class="card-img-top" alt="..." style="height: 40%;">
+                            <img src="../assets/Foto dari Fahri Salman (1).jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title"><strong>Projek 2</strong>
                                 </h5>
@@ -103,7 +199,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    
+                    <div class="col-md-4 mb-3">
                         <!-- card 3 -->
                         <div class="card" style="width: 18rem; width: 100%">
                             <img src="../assets/sidang-projek 3-3.jpg" class="card-img-top" alt="...">
@@ -115,7 +212,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    
+                    <div class="col-md-4 mb-3">
                         <!-- card 4 -->
                         <div class="card" style="width: 18rem; width: 100%">
                             <img src="../assets/foto samen.jpg" class="card-img-top" alt="...">
@@ -126,6 +224,18 @@
                             </div>
                         </div>
                     </div>
+                    
+                    <div class="col-md-4 mb-3">
+                        <!-- card 4 -->
+                        <div class="card" style="width: 18rem; width: 100%">
+                            <img src="../assets/hero 1.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title"><strong>gallery</strong></h5>
+                                <p class="card-text" style="font-weight: bold;">semua foto dokumentasi dari projek 1 - samen</p>
+                                <a href="../pages/gallery.html" class="btn btn-primary">kunjungi</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -133,27 +243,27 @@
         <footer>
             <div class="container-fluid bg-black" style="color: aliceblue;">
                 <div class="row" style="padding: 100px; padding-bottom: 30px; padding-top: 70px;">
-                    <div class="col-3">
+                    <div class="col-6">
                         <h3>Contact Us</h3>
                         <P>Our project Instagram :</P>
                         <a href="https://www.instagram.com/Astanaabhipraya/" style="display: inline;">
                             <p>@Astanaabhipraya</p>
                         </a>
                     </div>
-                    <div class="col-3">
+                    <div class="col-6">
                         <P>Our class Instagram :</P>
                         <a href="https://instagram.com/xninemeliora?igshid=YTQwZjQ0NmI0OA==" style="display: inline;">
                             <p>@xninemeliora</p>
                             </a>
                         </div>
-                        <div class="col-3">
+                        <div class="col-6">
                         <p>Our Email :
                             <a href="mailto:AstanAbhipraya@gmail.com">
                                 <p>Astanaabhipraya@gmail.com</p>
                             </a>
                         </p>
                     </div>
-                    <div class="col-3">
+                    <div class="col-6">
                         <p>Our Youtube Project :
                             <a href="https://www.youtube.com/@AstanaAbhipraya">
                                 <p>Astanaabhipraya</p>
