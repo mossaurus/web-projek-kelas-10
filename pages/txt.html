@@ -1,98 +1,143 @@
-header {
-    background-color: #A9A9A9;
-    padding: 10px;
-    text-align: center;
-    font-weight: bold;
-    height: 30%; /* Add this line */
-}
-    /* Set the width of the sidebar to 250px (desktop) */
-.sidebar {
-  width: 250px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  overflow-x: hidden;
-  padding-top: 20px;
-}
-
-/* Set the width of the content to 100% (desktop) */
-.content {
-  width: 100vh;
-  margin-left: 250px;
-  padding: 20px;
-}
-
-/* On mobile, set the width of the sidebar to 100% and position it to the right */
-@media screen and (max-width: 767px) {
-  .sidebar {
-    width: 100%;
-    height: auto;
-    position: relative;
-    float: left;
-    overflow: visible;
-  }
-  .content {
-    width: 100vh;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>New Horizons</title>
+</head>
+<style>
+  *,body, html {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
   }
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
 }
 
-/* Add some top padding to the content to prevent it from being covered by the sidebar */
-.content {
-  padding-top: 3.5rem;
+header {
+  background-color: #4CAF50;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-/* Style the navbar links */
-.nav-link {
-  display: block;
-  padding: 0.5rem 1rem;
+header h1 {
+  color: #fff;
+  margin: 0;
 }
 
-/* Add some hover styling to the navbar links */
-.nav-link:hover {
-  background-color: #f9f9f9;
+header nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
 }
 
-/* Style the active navbar link */
-.nav-link.active {
-  background-color: #e9ecef;
-}
-nav {
-  height: 30%;
+header nav ul li {
+  margin-right: 1rem;
 }
 
-footer {
-    background-color: #A9A9A9;
-    padding: 10px;
-    text-align: center;
-    font-weight: bold;
-    height: 30%; /* Add this line */
+header nav a {
+  color: #fff;
+  text-decoration: none;
 }
-<li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-      Dropdown
-    </a>
-    <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="../pages/content.html">projek 1</a></li>
-      <li><a class="dropdown-item" href="../pages/content 1.html">projek 2</a></li>
-      <li><a class="dropdown-item" href="../pages/content 2.html">projek 3</a></li>
-      <li><a class="dropdown-item" href="../pages/Samen.html">Samen</a></li>
-      <li><hr class="dropdown-divider"></li>
-      <li><a class="dropdown-item" href="../pages/gallery.html">gallery</a></li>
-    </ul>
-  </li>
-  <div class="dropdown">
-    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-      my project
-    </button>
-    <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="../pages/content.html">projek 1</a></li>
-      <li><a class="dropdown-item" href="../pages/content 1.html">projek 2</a></li>
-      <li><a class="dropdown-item" href="../pages/content 2.html">projek 3</a></li>
-      <li><a class="dropdown-item" href="../pages/Samen.html">Samen</a></li>
-      <li><hr class="dropdown-divider"></li>
-      <li><a class="dropdown-item" href="../pages/gallery.html">gallery</a></li>
-    </ul>
-  </div>
+
+#home {
+  background-size: cover;
+  background-position: center;
+  padding: 4rem 2rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-attachment: fixed;
+}
+
+#home .content {
+  width: 50%;
+}
+
+#home h2 {
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+#home p {
+  color: #fff;
+  margin-bottom: 2rem;
+}
+
+button {
+  background-color: #fff;
+  color: #4CAF50;
+  border: none;
+  padding: 0.5rem 2rem;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #e0e0e0;
+}
+</style>
+<body>
+  <header>
+    
+    <h1>
+      <a class="navbar-brand" href="../index.html">
+        <img src="../assets/logo.png" alt="" class="img-fluid"
+            style="width: 200x; padding-left: 20px; height: 70px;">
+      HORIZON</h1>
+    <nav>
+        
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#book">Book A Session</a></li>
+      </ul>
+      
+    </nav>
+  </header>
+  <section id="home" style="background-image: url(../assets/fotbar.jpg); background-size: cover; background-position: center; height: 100vh;">
+    <div class="content">
+      <h2>LETS OPEN NEW HORIZON'S TOGETHER</h2>
+      <p>lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <button>Get Started</button>
+    </div>
+  </section>
+  <!-- Add more sections for About Us, Experience, and Book A Session -->
+  <section id="home" style="background-image: url(../assets/a\ film\ by\ student\ of\ SMAN\ 23\ Bandung.jpg); background-size: cover; background-position: center; height: 100vh;">
+    <div class="content">
+      <h2>LETS OPEN NEW HORIZON'S TOGETHER</h2>
+      <p>lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <button>Get Started</button>
+    </div>
+  </section>
+  <section id="home" style="background-image: url(../assets/avengers.jpg); background-size: cover; background-position: center; height: 100vh;">
+    <div class="content">
+      <h2>LETS OPEN NEW HORIZON'S TOGETHER</h2>
+      <p>lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <button>Get Started</button>
+    </div>
+    <section id="home" style="background-image: url(../assets/foto\ samen.jpg); background-size: cover; background-position: center; height: 100vh;">
+      <div class="content">
+        <h2>Samen 2023</h2>
+        <p>Pameran projek selama kelas 10 dan menghias kelas untuk pengambilan rapot akhir tahun</p>
+        <a href="../pages/Samen.html">Get Started</a>
+      </div>
+      <section id="home" style="background-image: url(../assets/hero\ 1.png); background-size: cover; background-position: center; height: 100vh;">
+          <div class="content">
+            <h2>Gallery</h2>
+            <p>Kumpulan foto dan video yang ada di website ini</p>
+            <a href="../pages/gallery.html">Get Started</a>
+          </div>
+  </section>
+  
+</body>
+</html>
