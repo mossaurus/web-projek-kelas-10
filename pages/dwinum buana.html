@@ -3,8 +3,12 @@
 
 <head>
     <title>web </title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha386col-lg-6-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef06col-lg-686qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha386col-lg-6-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te6col-lg-6Bkz" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha386col-lg-6-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef06col-lg-686qhLnuZ2cdeRhO02iuK6FUUVM"
+        crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha386col-lg-6-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te6col-lg-6Bkz"
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style 1.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="../js/style.js"></script>
@@ -15,71 +19,63 @@
         body {
             background-image: url(..//assets/a\ film\ by\ student\ of\ SMAN\ 23\ Bandung.jpg);
         }
+
+        /* navbar */
+        header {
+            background-color: #2c2757;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            color: #fff;
+            margin: 0;
+        }
+
+        header nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+        }
+
+        header nav ul li {
+            margin-right: 1rem;
+        }
+
+        header nav a {
+            color: #fff;
+            text-decoration: none;
+        }
     </style>
     <!-- navbar mulai -->
     <header>
 
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <h1>
             <a class="navbar-brand" href="../index.html">
                 <img src="../assets/logo.png" alt="" class="img-fluid"
                     style="width: 200x; padding-left: 20px; height: 70px;">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-center id=" navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="../pages/projek.html"
-                            style="padding-right: 20px;"><strong>Home</strong></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="../pages/gallery.html"
-                            style="padding-right: 20px;"><strong>Gallery</strong></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="../pages/content.html"
-                            style="padding-right: 20px;"><strong>Projek 1<span
-                                    class="sr-only">(current)</span></strong></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="../pages/content 1.html"
-                            style="padding-right: 20px;"><strong>Projek 2</strong></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="../pages/content 2.html"
-                            style="padding-right: 20px;"><strong>Projek 3</strong></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="../pages/Samen.html"
-                            style="padding-right: 20px;"><strong>Samen</strong></a>
-                    </li>
-                    <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          my project
-                        </button>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="../pages/content.html">projek 1</a></li>
-                          <li><a class="dropdown-item" href="../pages/content 1.html">projek 2</a></li>
-                          <li><a class="dropdown-item" href="../pages/content 2.html">projek 3</a></li>
-                          <li><a class="dropdown-item" href="../pages/Samen.html">Samen</a></li>
-                          <li><hr class="dropdown-divider"></li>
-                          <li><a class="dropdown-item" href="../pages/gallery.html">gallery</a></li>
-                          <li><a class="dropdown-item" href="../Index.html">home</a></li>
-                        </ul>
-                      </div>
-                    
-                </ul>
-            </div>
-            </div>
+                Projek Kelas 10
+        </h1>
+        <nav>
+
+            <ul>
+                <li><a href="projek.html">Home</a></li>
+                <li><a href="content.html">Projek 1</a></li>
+                <li><a href="content 1.html">Projek 2</a></li>
+                <li><a href="content 2.html">Projek 3</a></li>
+                <li><a href="Samen.html">SAMEN 2023</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+
         </nav>
-</header>
+    </header>
     <!-- navbar selesai -->
     <div class="mt-5">
 
         <h1 style="text-align: center; color: aliceblue;" class="projek">Projek 3</h1>
-        <h2 style="text-align: center;color: aliceblue; "class="projek">
+        <h2 style="text-align: center;color: aliceblue; " class="projek">
             <br style="color: aliceblue;">Dwinum Buana</br>
         </h2>
         <h5 style="margin: 5px; text-align: justify; padding: 10px; color: aliceblue;">
@@ -105,69 +101,53 @@
         </ul>
     </div>
 
-    
-    
 
-        <div id="slideshow" class="container-fluid d-flex align-items-center">
-            <div class="row ">
-                <div class="myslides">
-                    <a href="https://drive.google.com/file/d/1VFy_P4qFQ1ejlBBjuwGMjvzYNdMxp_f1/view?usp=drive_link">
+
+
+    <div id="slideshow" class="container-fluid d-flex align-items-center">
+        <div class="row ">
+            <div class="myslides">
+                <a href="https://drive.google.com/file/d/1VFy_P4qFQ1ejlBBjuwGMjvzYNdMxp_f1/view?usp=drive_link">
                     <img class="rounded-1" src="../assets/konsul.jpg" alt=" " width="100%">
-                    </a>
-            <h2 style="color: aliceblue;">Konsul projek dengan guru pembimbing</h2>
-                </div>
+                </a>
+                <h2 style="color: aliceblue;">Konsul projek dengan guru pembimbing</h2>
+            </div>
 
-                <div class="myslides">
-                    <a href="https://drive.google.com/file/d/1VDugCVADjaVByJqg2z_jxNaO9BiXn1_l/view?usp=drive_link">
-                        </a>
-                    <img class="rounded-1" src="../assets/musical.png" alt=" " width="100%">
-                    <h2 style="color: aliceblue;">Rekaman lagu yang sudah dibuat</h2>
-                </div>
-                <div class="myslides">
-                    <a href="https://drive.google.com/file/d/1omLF0DZfkcT8u7eO7joAH9VJMWcJniS7/view?usp=drive_link">
+            <div class="myslides">
+                <a href="https://drive.google.com/file/d/1VDugCVADjaVByJqg2z_jxNaO9BiXn1_l/view?usp=drive_link">
+                </a>
+                <img class="rounded-1" src="../assets/musical.png" alt=" " width="100%">
+                <h2 style="color: aliceblue;">Rekaman lagu yang sudah dibuat</h2>
+            </div>
+            <div class="myslides">
+                <a href="https://drive.google.com/file/d/1omLF0DZfkcT8u7eO7joAH9VJMWcJniS7/view?usp=drive_link">
                     <img class="rounded-1" src="../assets/film.jpg" alt=" " width="100%">
                 </a>
                 <h2 style="color: aliceblue;">Diskusi tentang konsep film yang akan di buat</h2>
-                </div>
-                </div>
+            </div>
         </div>
+    </div>
 
 
     </div>
-<div class="slide-container">
-    <a class="prev" onclick="plusSlides(-1)"></a>
-    <a class="next" onclick="plusSlides(1)"></a>
-</div>
-<div class="row">
-    <div class="col-6">
-        <h3 style="color: aliceblue;">penampilan lagu dengan judul "bumi sejuta harapan"</h3>
-        <video width="100%" height="auto" controls>
-            <source src="../assets/music.mp4" type="video/mp4">
-            <source src="../assets/music.mp3" type="video/mp3">
-            Browser Anda tidak mendukung tag video.
-        </video>
+    <h3 style="color: aliceblue;">penampilan lagu dengan judul "bumi sejuta harapan"</h3>
+    <video width="100%" height="auto" controls>
+        <source src="../assets/music.mp4" type="video/mp4">
+        <source src="../assets/music.mp3" type="video/mp3">
+        Browser Anda tidak mendukung tag video.
+    </video>
+    <h3 style="color: aliceblue;"> trailer film Dwinum Buana</h3>
+    <video width="100%" height="50%" controls>
+        <source src="../assets/film.mp4" type="video/mp4">
+        <source src="../assets/film.mp3" type="video/mp3">
+        Browser Anda tidak mendukung tag video.
+    </video>
+    <h3 style="color: aliceblue;">film Dwinum Buana</h3>
+    <iframe width="1350px" height="500px" src="https://www.youtube.com/embed/oQUfo1nVa4A?si=qSE9x8W4odT4Kj5_"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
     </div>
-    <div class="col-6">
-        <h3 style="color: aliceblue;"> trailer film Dwinum Buana</h3>
-        <video width="100%" height="auto" controls>
-            <source src="../assets/film.mp4" type="video/mp4">
-            <source src="../assets/film.mp3" type="video/mp3">
-            Browser Anda tidak mendukung tag video.
-        </video>
-    </div>
-</div>
-<div class="container">
-    <nav aria-label="Page navigation example">
-        <ul class="pagination justify-content-center" >
-            <li class="page-item"><a class="page-link" href="../pages/projek.html">Home</a></li>
-            <li class="page-item"><a class="page-link" href="../pages/content.html"> projek 1</a></li>
-            <li class="page-item"><a class="page-link" href="../pages/content 1.html"> projek 2</a></li>
-            <li class="page-item"><a class="page-link" href="../pages/content 2.html"> projek 3</a></li>
-            <li class="page-item"><a class="page-link" href="../pages/Samen.html"> samen</a></li>
-            <li class="page-item"><a class="page-link" href="../pages/gallery.html">gallery</a></li>
-        </ul>
-    </nav>
-</div>
     <!-- footer selesai -->
     <footer>
         <div class="container-fluid bg-black" style="color: aliceblue;">
@@ -183,9 +163,9 @@
                     <P>Our class Instagram :</P>
                     <a href="https://instagram.com/xninemeliora?igshid=YTQwZjQ0NmI0OA==" style="display: inline;">
                         <p>@xninemeliora</p>
-                        </a>
-                    </div>
-                    <div class="col-6">
+                    </a>
+                </div>
+                <div class="col-6">
                     <p>Our Email :
                         <a href="mailto:AstanAbhipraya@gmail.com">
                             <p>Astanaabhipraya@gmail.com</p>

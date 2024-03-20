@@ -1,143 +1,307 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>New Horizons</title>
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css ">
+  </link>
+  <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js "
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz " crossorigin="anonymous ">
+    </script>
+  <link rel="stylesheet " href="../css/style 1.css" />
 </head>
 <style>
-  *,body, html {
+  /* clearing */
+  *,
+  body,
+  html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
-body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  color: #333;
-}
 
-header {
-  background-color: #4CAF50;
-  padding: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+  /* navbar */
+  header {
+    background-color: #2c2757;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-header h1 {
-  color: #fff;
-  margin: 0;
-}
+  header h1 {
+    color: #fff;
+    margin: 0;
+  }
 
-header nav ul {
-  list-style-type: none;
-  padding: 0;
-  display: flex;
-}
+  header nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+  }
 
-header nav ul li {
-  margin-right: 1rem;
-}
+  header nav ul li {
+    margin-right: 1rem;
+  }
 
-header nav a {
-  color: #fff;
-  text-decoration: none;
-}
+  header nav a {
+    color: #fff;
+    text-decoration: none;
+  }
 
-#home {
-  background-size: cover;
-  background-position: center;
-  padding: 4rem 2rem;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-  background-attachment: fixed;
-}
+  /* parallax */
+  .parallax {
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
 
-#home .content {
-  width: 50%;
-}
+  .intro {
+    background-image: url(../assets/projek\ 1.jpg);
+  }
 
-#home h2 {
-  color: #fff;
-  margin-bottom: 1rem;
-}
+  .content {
+    background-image: url(../assets/projek.jpg);
+  }
 
-#home p {
-  color: #fff;
-  margin-bottom: 2rem;
-}
+  .I-footer {
+    background-image: url(../assets/projek.jpg);
+  }
 
-button {
-  background-color: #fff;
-  color: #4CAF50;
-  border: none;
-  padding: 0.5rem 2rem;
-  text-transform: uppercase;
-  cursor: pointer;
-}
+  .content-1 {
+    background-image: url(../assets/projek\ 1-9.jpg);
+  }
 
-button:hover {
-  background-color: #e0e0e0;
-}
+  .content-2 {
+    background-image: url(../assets/projek\ 1-10.jpg);
+  }
+
+  .content-3 {
+    background-image: url(../assets/projek\ 1-6.jpg);
+  }
+
+  .content-4 {
+    background-image: url(../assets/projek\ 1-8.jpg);
+  }
+
+  /* teks parallax */
+  .text {
+    height: 100vh;
+  }
+
+  /* teks parallax */
+  .text {
+    height: 100vh;
+  }
+
+  /* intro */
+  .teks-parallax {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  h1 {
+    font-size: 4em;
+    letter-spacing: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    align-self: flex-start;
+    color: aliceblue;
+  }
+
+  /* content */
+  .J-parallax {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  h2 {
+    font-size: 4em;
+    letter-spacing: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    align-self: flex-start;
+    color: aliceblue;
+    margin-bottom: 25%;
+  }
+  .projek {
+    font-size: 2em;
+    letter-spacing: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    align-self: flex-start;
+    color: aliceblue;
+    margin-bottom: 25%;
+  }
+  /* footer */
+  .P-parallax {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: -8%;
+  }
+
+  h3 {
+    font-size: 4em;
+    letter-spacing: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    align-self: flex-end;
+    color: aliceblue;
+    margin-bottom: 0%;
+  }
+
+  .P-parallax-2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 30%;
+  }
 </style>
+
 <body>
   <header>
-    
+
     <h1>
       <a class="navbar-brand" href="../index.html">
-        <img src="../assets/logo.png" alt="" class="img-fluid"
-            style="width: 200x; padding-left: 20px; height: 70px;">
-      HORIZON</h1>
+        <img src="../assets/logo.png" alt="" class="img-fluid" style="width: 200x; padding-left: 20px; height: 70px;">
+        Projek Kelas 10
+    </h1>
     <nav>
-        
+
       <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About Us</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#book">Book A Session</a></li>
+        <li><a href="projek.html">Home</a></li>
+        <li><a href="content.html">Projek 1</a></li>
+        <li><a href="content 1.html">Projek 2</a></li>
+        <li><a href="content 2.html">Projek 3</a></li>
+        <li><a href="Samen.html">SAMEN 2023</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
       </ul>
-      
+
     </nav>
   </header>
-  <section id="home" style="background-image: url(../assets/fotbar.jpg); background-size: cover; background-position: center; height: 100vh;">
-    <div class="content">
-      <h2>LETS OPEN NEW HORIZON'S TOGETHER</h2>
-      <p>lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <button>Get Started</button>
-    </div>
-  </section>
-  <!-- Add more sections for About Us, Experience, and Book A Session -->
-  <section id="home" style="background-image: url(../assets/a\ film\ by\ student\ of\ SMAN\ 23\ Bandung.jpg); background-size: cover; background-position: center; height: 100vh;">
-    <div class="content">
-      <h2>LETS OPEN NEW HORIZON'S TOGETHER</h2>
-      <p>lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <button>Get Started</button>
-    </div>
-  </section>
-  <section id="home" style="background-image: url(../assets/avengers.jpg); background-size: cover; background-position: center; height: 100vh;">
-    <div class="content">
-      <h2>LETS OPEN NEW HORIZON'S TOGETHER</h2>
-      <p>lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <button>Get Started</button>
-    </div>
-    <section id="home" style="background-image: url(../assets/foto\ samen.jpg); background-size: cover; background-position: center; height: 100vh;">
-      <div class="content">
-        <h2>Samen 2023</h2>
-        <p>Pameran projek selama kelas 10 dan menghias kelas untuk pengambilan rapot akhir tahun</p>
-        <a href="../pages/Samen.html">Get Started</a>
+  <div class="parallax intro">
+    <div class="text">
+      <!-- intro -->
+      <div class="teks-parallax">
+        <h1>projek 1</h1>
       </div>
-      <section id="home" style="background-image: url(../assets/hero\ 1.png); background-size: cover; background-position: center; height: 100vh;">
-          <div class="content">
-            <h2>Gallery</h2>
-            <p>Kumpulan foto dan video yang ada di website ini</p>
-            <a href="../pages/gallery.html">Get Started</a>
+      <!-- content -->
+      <div class="J-parallax">
+        <ul class="projek">
+          <b>
+          <li class="list-group-item ">Anggota :</li>
+          <li class="list-group-item ">Fahri</li>
+          <li class="list-group-item ">Ginda</li>
+          <li class="list-group-item ">Difa</li>
+          <li class="list-group-item ">Naisyilla</li>
+          <li class="list-group-item ">Rizky</li>
+          <li class="list-group-item ">Sabila</li>
+      </ul>
+  </b>
+    </div>
+  </div>
+      </div>
+      <!-- footer -->
+      <div class="P-parallax">
+        <h3>foto setelah sidang projek</h3>
+      </div>
+    </div>
+    <div class="parallax content">
+      <div class="text">
+        <div class="teks-parallax">
+          <h1>projek 1</h1>
+        </div>
+          <div class="P-parallax-2">
+            <h3>persentasi projek di kelas</h3>
           </div>
-  </section>
-  
+      </div>
+    </div>
+    <div class="parallax content-1">
+      <div class="text">
+        <div class="teks-parallax">
+          <h1>ini parallax</h1>
+        </div>
+          <div class="P-parallax-2">
+            <h3>menyusun KTI</h3>
+          </div>
+      </div>
+    </div>
+    <div class="parallax content-2">
+      <div class="text">
+        <div class="teks-parallax">
+          <h1>ini parallax</h1>
+        </div>
+          <div class="P-parallax-2">
+            <h3>setelah selesai menyusun KTI</h3>
+          </div>
+      </div>
+    </div>
+    <div class="parallax content-3">
+      <div class="text">
+        <div class="teks-parallax">
+          <h1>ini parallax</h1>
+        </div>
+          <div class="P-parallax-2">
+            <h3>sidang projek </h3>
+          </div>
+      </div>
+    </div>
+    <div class="parallax content-4">
+      <div class="text">
+        <div class="teks-parallax">
+          <h1>ini parallax</h1>
+        </div>
+          <div class="P-parallax-2">
+            <h3>Sidang projek (2)</h3>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <footer>
+    <div class="container-fluid bg-black" style="color: aliceblue;">
+      <div class="row" style="padding: 100px; padding-bottom: 30px; padding-top: 70px;">
+        <div class="col-3">
+          <h4>Contact Us</h4>
+          <P>Our project Instagram :</P>
+          <a href="https://www.instagram.com/Astanaabhipraya/" style="display: inline;">
+            <p>@Astanaabhipraya</p>
+          </a>
+        </div>
+        <div class="col-3">
+          <P>Our class Instagram :</P>
+          <a href="https://instagram.com/xninemeliora?igshid=YTQwZjQ0NmI0OA==" style="display: inline;">
+            <p>@xninemeliora</p>
+          </a>
+        </div>
+        <div class="col-3">
+          <p>Our Email :
+            <a href="mailto:AstanAbhipraya@gmail.com">
+              <p>Astanaabhipraya@gmail.com</p>
+            </a>
+          </p>
+        </div>
+        <div class="col-3">
+          <p>Our Youtube Project :
+            <a href="https://www.youtube.com/@AstanaAbhipraya">
+              <p>Astanaabhipraya</p>
+            </a>
+          </p>
+        </div>
+      </div>
+      <div class="row text-center" style="padding-bottom: 5px; margin-top: 5px;">
+        <h4>&copy; Copyright X-9 2023</h4>
+      </div>
+    </div>
+  </footer>
+  <!-- footer selesai -->
+
 </body>
+
 </html>
